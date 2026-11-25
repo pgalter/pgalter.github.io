@@ -1,0 +1,64 @@
+/* Page-specific presentation for Paula Galter's site. */
+
+.social .contact-icons a,
+.social .contact-icons i {
+  font-size: 1.35rem;
+}
+
+.post article > h2 {
+  font-size: 1.55rem;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.post article > h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 2.3rem;
+  margin-bottom: 0.65rem;
+}
+
+.post article > h3 + p {
+  margin-bottom: 1.75rem;
+}
+
+.cv .list-group-item > .row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 27%) minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.cv .list-group-item > .row > [class*="col-"] {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin-top: 0 !important;
+  padding: 0;
+}
+
+.cv .date-column,
+.cv .table-cv {
+  min-width: 0;
+  width: 100%;
+}
+
+.cv p.location {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cv .list-group-item,
+.cv .list-group-item > .row > [class*="col-"] {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .cv .list-group-item > .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .cv .date-column {
+    text-align: left !important;
+  }
+}
